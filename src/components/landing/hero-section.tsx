@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_farthest-side_at_50%_0%,hsl(var(--primary)/0.3)_0%,transparent_75%)]">
-      {/* The radial gradient provides a purple glow from the top, extending wide and fading into the black background. */}
+    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_farthest-side_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+      {/* The radial gradient uses the --hero-glow-purple variable for a specific magenta-ish purple glow from the top, extending wide and fading into the black background. Opacity 0.45, fade to transparent at 70% mark of the ellipse. */}
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">

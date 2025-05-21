@@ -54,6 +54,9 @@ body {
     --sidebar-accent-foreground: 0 0% 90%;
     --sidebar-border: 0 0% 16%;
     --sidebar-ring: 270 70% 55%;
+
+    /* Custom color for hero gradient based on reference image */
+    --hero-glow-purple: 304 78% 61%; /* Derived from reference image's purple oklch(.627 .265 303.9) */
   }
 
   .dark {
@@ -89,6 +92,8 @@ body {
     --sidebar-accent-foreground: 0 0% 90%;
     --sidebar-border: 0 0% 16%;
     --sidebar-ring: 270 70% 55%;
+     /* Custom color for hero gradient, ensuring it's available in dark mode too */
+    --hero-glow-purple: 304 78% 61%;
   }
 }
 
