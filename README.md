@@ -22,7 +22,7 @@ A modern, AI-powered virtual clothes try-on web application built with **Next.js
 |---------------|---------------------------------|
 | Next.js       | React framework for frontend    |
 | Tailwind CSS  | Utility-first CSS styling       |
-| Gemini AI     | Style recommendation logic      |
+| Gemini API     | Style recommendation logic      |
 | Vercel (optional) | Hosting (if deployed)       |
 
 ---
@@ -47,5 +47,14 @@ cd virtual-tryon
 npm install
 # or
 yarn install
+```
 
+##  🔮 Upcoming Backend Features (In Progress)
+- 👤 User Authentication (JWT or OAuth)
+- 🖼️ Real-time Try-On via AI (using MediaPipe/Deep Learning models)
+- 💾 Save Favorite Looks
+- 📈 Outfit Popularity Analytics
+- ☁️ Cloud Storage for Image Uploads
 
+## 🤖 AI Integration (Gemini)
+We use Gemini API to recommend clothing styles and color combinations. Currently, this is simulated in the frontend. Full dynamic integration will be available once backend development is completed.
