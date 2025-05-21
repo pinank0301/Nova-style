@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google'; // Assuming Geist is preferred over Geist_Sans
+import { Geist } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
-const geist = Geist({ // Using Geist variable font
+const geist = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
 });
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark"> {/* Apply dark class to html for consistent dark theme */}
+    <html lang="en" className="dark">
       <body className={`${geist.variable} font-sans antialiased bg-background text-foreground`}>
         <Header />
         <main className="flex-grow">
