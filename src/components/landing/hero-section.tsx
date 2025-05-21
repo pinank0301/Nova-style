@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-background bg-[radial-gradient(ellipse_at_center_top,hsl(var(--primary)/0.25)_0%,transparent_70%)]">
+    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_at_center_top,hsl(var(--primary)/0.35)_0%,transparent_60%)]">
+      {/* The opacity of the primary color in the gradient was increased slightly from 0.25 to 0.35, and fade out extent from 70% to 60% for a bit more pronounced purple */}
       <div className="absolute inset-0 opacity-5">
          {/* <Image src="https://placehold.co/1920x1080.png" alt="Abstract background" layout="fill" objectFit="cover" data-ai-hint="abstract pattern" /> */}
       </div>
-      {/* Floating orbs removed to match the cleaner gradient style of the example */}
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
@@ -38,4 +38,3 @@ export function HeroSection() {
     </section>
   );
 }
-
