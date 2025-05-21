@@ -5,18 +5,18 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_50%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_35%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
       
-      {/* Main content container: Added pt-16 (header height) to existing py-20 */}
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center z-10"> {/* py-20 becomes pt-36 (9rem) pb-20 (5rem) */}
+      {/* Main content container: Added pt-16 (header height of 4rem) to existing py-20 (5rem) for a total of 9rem (pt-36) top padding */}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           <span className="block">NovaStyle:</span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-fuchsia-500 animate-background-pan">
-            Define Your Signature.
+            Ignite Your Presence.
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-10">
-          Unlock a universe of style possibilities. Try on outfits virtually, get AI-driven fashion insights, and discover pieces that amplify your individuality.
+          Step into a universe where fashion meets innovation. Virtually try on iconic looks, receive AI-powered styling, and curate a wardrobe that's uniquely you.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-all duration-300 ease-in-out transform hover:scale-105 hover-glow-primary">
