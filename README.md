@@ -1,5 +1,6 @@
-# Firebase Studio
+#Nova-Style
 
-This is a NextJS starter in Firebase Studio.
+Only Frontned ready
 
-To get started, take a look at src/app/page.tsx.
+Backend in Development phase
+
