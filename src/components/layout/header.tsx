@@ -23,7 +23,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full bg-transparent"> {/* Ensure full transparency */}
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <ShoppingBag className="h-7 w-7 text-primary" />
@@ -56,6 +56,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
               <nav className="flex flex-col space-y-6 pt-10">
                 {navItems.map((item) => (
+                  // Mobile NavLink needs access to Sheet's close function if we want to auto-close on nav
                   <NavLink key={item.label} href={item.href}>{item.label}</NavLink>
                 ))}
                 <div className="border-t border-border/40 pt-6 flex flex-col space-y-4">
