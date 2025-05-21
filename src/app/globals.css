@@ -9,10 +9,10 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 10%; /* Slightly darker base */
+    --background: 0 0% 0%; /* Black */
     --foreground: 0 0% 95%; /* Light Gray for text */
 
-    --card: 0 0% 15%; /* Slightly Lighter Dark Gray for cards */
+    --card: 0 0% 5%; /* Very Dark Gray for cards, almost black */
     --card-foreground: 0 0% 95%;
 
     --popover: 0 0% 13%; /* Darker popover */
@@ -60,9 +60,9 @@ body {
   }
 
   .dark {
-    --background: 0 0% 10%;
+    --background: 0 0% 0%; /* Black */
     --foreground: 0 0% 95%;
-    --card: 0 0% 15%;
+    --card: 0 0% 5%; /* Very Dark Gray for cards */
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 13%;
     --popover-foreground: 0 0% 95%;

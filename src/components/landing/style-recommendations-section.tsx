@@ -69,7 +69,7 @@ export function StyleRecommendationsSection() {
   };
 
   return (
-    <SectionWrapper id="recommendations" className="bg-gradient-to-br from-background to-muted/30">
+    <SectionWrapper id="recommendations" className="bg-background">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
           <Sparkles className="inline-block h-8 w-8 text-primary mr-2 animate-pulse" />

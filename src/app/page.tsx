@@ -34,7 +34,7 @@ export default function HomePage() {
       <VirtualTryOnSection />
       <StyleRecommendationsSection />
       
-      <SectionWrapper className="bg-gradient-to-b from-background to-muted/20">
+      <SectionWrapper className="bg-background">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">Why Shop With NovaStyle?</h2>
           <p className="mt-4 text-lg text-muted-foreground">Experience a new era of online fashion shopping.</p>
@@ -50,13 +50,13 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-gradient-to-r from-primary/90 via-purple-600/90 to-accent/90 text-primary-foreground">
+      <SectionWrapper className="bg-background text-foreground">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to Find Your Perfect Style?</h2>
-          <p className="max-w-xl mx-auto text-lg text-primary-foreground/90 mb-8">
+          <p className="max-w-xl mx-auto text-lg text-foreground/90 mb-8">
             Join NovaStyle today and transform your wardrobe with pieces that speak to you.
           </p>
-          <Button asChild size="lg" variant="outline" className="bg-background text-primary hover:bg-background/90 border-transparent shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+          <Button asChild size="lg" variant="outline" className="bg-primary text-primary-foreground hover:bg-primary/90 border-transparent shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <Link href="/#shop">
               Start Shopping Now <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
