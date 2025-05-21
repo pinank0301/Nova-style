@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,89 +9,86 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 13%; /* #212121 Dark Gray */
+    --background: 0 0% 10%; /* Slightly darker base */
     --foreground: 0 0% 95%; /* Light Gray for text */
 
-    --card: 0 0% 18%; /* Slightly Lighter Dark Gray for cards */
+    --card: 0 0% 15%; /* Slightly Lighter Dark Gray for cards */
     --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 18%;
+    --popover: 0 0% 13%; /* Darker popover */
     --popover-foreground: 0 0% 95%;
 
-    --primary: 262 52% 47%; /* #673AB7 Deep Purple */
+    --primary: 270 70% 55%; /* Vibrant Purple */
     --primary-foreground: 0 0% 98%; /* White for text on primary */
 
-    --secondary: 262 40% 35%; /* A darker/muted purple */
+    --secondary: 270 50% 45%; /* Darker/muted purple */
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 0 0% 25%; /* Muted gray */
-    --muted-foreground: 0 0% 60%; /* Lighter Gray for muted text */
+    --muted: 0 0% 22%; /* Muted gray, slightly lighter */
+    --muted-foreground: 0 0% 65%; /* Lighter Gray for muted text */
 
-    --accent: 256 44% 83%; /* #D1C4E9 Light Lavender */
-    --accent-foreground: 262 52% 37%; /* Darker Purple for text on accent, for better contrast */
+    --accent: 300 80% 70%; /* Pinkish Lavender */
+    --accent-foreground: 270 70% 35%; /* Darker Purple for text on accent */
 
-    --destructive: 0 62.8% 30.6%; /* Default destructive from original dark theme */
+    --destructive: 0 70% 45%; /* Brighter destructive red */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 22%; /* Darker border */
-    --input: 0 0% 20%; /* Input background */
-    --ring: 262 52% 47%; /* Deep Purple for focus rings */
+    --border: 0 0% 20%; /* Darker border */
+    --input: 0 0% 18%; /* Input background */
+    --ring: 270 70% 55%; /* Vibrant Purple for focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Slightly larger radius for a softer look */
 
-    --chart-1: 262 70% 60%; /* Purple shades for charts */
-    --chart-2: 262 60% 50%;
-    --chart-3: 256 50% 70%; /* Lavender shades for charts */
-    --chart-4: 256 40% 60%;
-    --chart-5: 0 0% 50%; /* Gray for charts */
+    --chart-1: 270 80% 65%; /* Purple shades for charts */
+    --chart-2: 270 60% 55%;
+    --chart-3: 300 70% 75%; /* Pink/Lavender shades for charts */
+    --chart-4: 300 50% 65%;
+    --chart-5: 0 0% 55%; /* Gray for charts */
 
-    /* Sidebar variables (can be adjusted if a sidebar is heavily used) */
-    --sidebar-background: 0 0% 10%; /* Even darker for sidebar */
+    /* Sidebar variables */
+    --sidebar-background: 0 0% 8%; 
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 262 52% 47%;
+    --sidebar-primary: 270 70% 55%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent: 0 0% 13%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 262 52% 47%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 270 70% 55%;
   }
 
-  /* The .dark class is not strictly necessary if :root is already the dark theme,
-     but it's kept here for consistency with shadcn's structure and potential future light/dark toggle.
-     Its values will be the same as :root for now. */
   .dark {
-    --background: 0 0% 13%;
+    --background: 0 0% 10%;
     --foreground: 0 0% 95%;
-    --card: 0 0% 18%;
+    --card: 0 0% 15%;
     --card-foreground: 0 0% 95%;
-    --popover: 0 0% 18%;
+    --popover: 0 0% 13%;
     --popover-foreground: 0 0% 95%;
-    --primary: 262 52% 47%;
+    --primary: 270 70% 55%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 262 40% 35%;
+    --secondary: 270 50% 45%;
     --secondary-foreground: 0 0% 95%;
-    --muted: 0 0% 25%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 256 44% 83%;
-    --accent-foreground: 262 52% 37%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 0 0% 22%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 300 80% 70%;
+    --accent-foreground: 270 70% 35%;
+    --destructive: 0 70% 45%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 22%;
-    --input: 0 0% 20%;
-    --ring: 262 52% 47%;
-    --chart-1: 262 70% 60%;
-    --chart-2: 262 60% 50%;
-    --chart-3: 256 50% 70%;
-    --chart-4: 256 40% 60%;
-    --chart-5: 0 0% 50%;
-    --sidebar-background: 0 0% 10%;
+    --border: 0 0% 20%;
+    --input: 0 0% 18%;
+    --ring: 270 70% 55%;
+    --chart-1: 270 80% 65%;
+    --chart-2: 270 60% 55%;
+    --chart-3: 300 70% 75%;
+    --chart-4: 300 50% 65%;
+    --chart-5: 0 0% 55%;
+    --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 262 52% 47%;
+    --sidebar-primary: 270 70% 55%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent: 0 0% 13%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 262 52% 47%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 270 70% 55%;
   }
 }
 
@@ -100,8 +98,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    /* Apply dark theme by default if html tag doesn't have 'dark' class */
-    /* Or, if `layout.tsx` adds `className="dark"` to `<html>`, this is not needed */
   }
 }
 
@@ -118,3 +114,12 @@ body {
   animation: background-pan 10s linear infinite;
   background-size: 200%;
 }
+
+/* Adding a subtle glow effect for primary elements */
+.glow-primary {
+  box-shadow: 0 0 15px 0px hsl(var(--primary) / 0.5), 0 0 30px 0px hsl(var(--primary) / 0.3);
+}
+.hover-glow-primary:hover {
+   box-shadow: 0 0 20px 2px hsl(var(--primary) / 0.6), 0 0 40px 5px hsl(var(--primary) / 0.4);
+}
+
