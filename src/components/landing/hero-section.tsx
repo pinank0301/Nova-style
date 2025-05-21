@@ -2,19 +2,16 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
+// Removed Image import as it's no longer used directly here
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_at_center_top,hsl(var(--primary)/0.35)_0%,transparent_60%)]">
-      {/* The opacity of the primary color in the gradient was increased slightly from 0.25 to 0.35, and fade out extent from 70% to 60% for a bit more pronounced purple */}
-      <div className="absolute inset-0 opacity-5">
-         {/* <Image src="https://placehold.co/1920x1080.png" alt="Abstract background" layout="fill" objectFit="cover" data-ai-hint="abstract pattern" /> */}
-      </div>
+    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_at_center_top,hsl(var(--primary)/0.25)_0%,transparent_70%)]">
+      {/* The radial gradient provides a subtle purple glow from the top, fading into the black background. */}
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-          <span className="block">Aetheria:</span>
+          <span className="block">NovaStyle:</span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-fuchsia-500 animate-background-pan">
             Redefine Your Style.
           </span>
