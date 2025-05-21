@@ -4,10 +4,37 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export function HeroSection() {
+  const stars = [
+    { size: 'w-1 h-1', top: '10%', left: '15%', delay: '0s' },
+    { size: 'w-[2px] h-[2px]', top: '20%', left: '80%', delay: '0.5s' },
+    { size: 'w-1 h-1', top: '30%', left: '5%', delay: '1s' },
+    { size: 'w-[1px] h-[1px]', top: '40%', left: '60%', delay: '1.5s' },
+    { size: 'w-1 h-1', top: '50%', left: '25%', delay: '0.2s' },
+    { size: 'w-[2px] h-[2px]', top: '65%', left: '90%', delay: '0.7s' },
+    { size: 'w-[1px] h-[1px]', top: '80%', left: '50%', delay: '1.2s' },
+    { size: 'w-1 h-1', top: '15%', left: '40%', delay: '0.3s' },
+    { size: 'w-[2px] h-[2px]', top: '5%', left: '70%', delay: '0.8s' },
+  ];
+
   return (
-    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_35%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+    <section className="relative bg-black text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_200%_35%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
       
-      {/* Main content container: Added pt-16 (header height of 4rem) to existing py-20 (5rem) for a total of 9rem (pt-36) top padding */}
+      {/* Stars */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {stars.map((star, index) => (
+          <div
+            key={index}
+            className={`absolute ${star.size} bg-slate-400 rounded-full animate-twinkle`}
+            style={{
+              top: star.top,
+              left: star.left,
+              animationDelay: star.delay,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Main content container */}
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           <span className="block">NovaStyle:</span>
