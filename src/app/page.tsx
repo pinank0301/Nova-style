@@ -52,9 +52,9 @@ export default function HomePage() {
 
       <SectionWrapper className="bg-background text-foreground">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to Find Your Perfect Style?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Elevate Your Wardrobe Today?</h2>
           <p className="max-w-xl mx-auto text-lg text-foreground/90 mb-8">
-            Join NovaStyle today and transform your wardrobe with pieces that speak to you.
+            Step into a world of personalized fashion. Explore curated collections and find pieces that truly resonate with your unique style.
           </p>
           <Button asChild size="lg" variant="outline" className="bg-primary text-primary-foreground hover:bg-primary/90 border-transparent shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <Link href="/#shop">
