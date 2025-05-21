@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_40%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_50%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
       
       {/* Main content container: Added pt-16 (header height) to existing py-20 */}
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center z-10"> {/* py-20 becomes pt-36 (9rem) pb-20 (5rem) */}
