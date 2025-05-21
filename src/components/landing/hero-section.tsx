@@ -2,12 +2,11 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-// Removed Image import as it's no longer used directly here
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_at_center_top,hsl(var(--primary)/0.25)_0%,transparent_70%)]">
-      {/* The radial gradient provides a subtle purple glow from the top, fading into the black background. */}
+    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_farthest-side_at_50%_0%,hsl(var(--primary)/0.3)_0%,transparent_75%)]">
+      {/* The radial gradient provides a purple glow from the top, extending wide and fading into the black background. */}
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
