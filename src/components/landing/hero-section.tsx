@@ -5,17 +5,18 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_40%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+    <section className="relative text-foreground min-h-screen flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_40%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
       
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
+      {/* Main content container: Added pt-16 (header height) to existing py-20 */}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 text-center z-10"> {/* py-20 becomes pt-36 (9rem) pb-20 (5rem) */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
           <span className="block">NovaStyle:</span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-fuchsia-500 animate-background-pan">
-            Discover Your True Style.
+            Define Your Signature.
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-10">
-          Step into the future of fashion. Experience immersive virtual try-ons, get AI-powered style advice, and unveil pieces that uniquely express you.
+          Unlock a universe of style possibilities. Try on outfits virtually, get AI-driven fashion insights, and discover pieces that amplify your individuality.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-all duration-300 ease-in-out transform hover:scale-105 hover-glow-primary">
