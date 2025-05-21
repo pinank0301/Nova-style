@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark"> {/* Apply dark class to html for consistent dark theme */}
+    <html lang="en" className="dark">{/* Apply dark class to html for consistent dark theme */}
       <body className={`${geist.variable} font-sans antialiased bg-background text-foreground`}>
         <Header />
         <main className="flex-grow">
