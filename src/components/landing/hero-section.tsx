@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_50%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
-      {/* The radial gradient uses an ellipse 200% wide and 50% tall, centered at the top middle. 
-          This ensures the --hero-glow-purple (with 0.45 opacity) starts at 0% (center) 
-          and fades to transparent by 70% of this large radius, creating an end-to-end screen effect. */}
+    <section className="relative text-foreground min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-black bg-[radial-gradient(ellipse_200%_40%_at_50%_0%,hsl(var(--hero-glow-purple)/0.45)_0%,transparent_70%)]">
+      {/* The radial gradient uses an ellipse 200% wide (for end-to-end screen effect) and 40% tall, centered at the top middle. 
+          This ensures the --hero-glow-purple (with 0.45 opacity) starts at 0% (center of this ellipse) 
+          and fades to transparent by 70% of the ellipse's radius. */}
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
