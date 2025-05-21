@@ -10,7 +10,7 @@ export function Footer() {
   ];
 
   const footerLinks = [
-    { href: '/about', label: 'About Aetheria' },
+    { href: '/about', label: 'About NovaStyle' },
     { href: '/contact', label: 'Contact Us' },
     { href: '/faq', label: 'FAQ' },
     { href: '/terms', label: 'Terms of Service' },
@@ -24,10 +24,10 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <ShoppingBag className="h-7 w-7 text-primary" />
-              <span className="text-2xl font-bold text-foreground">Aetheria</span>
+              <span className="text-2xl font-bold text-foreground">NovaStyle</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Discover the future of fashion with Aetheria. Virtual try-on, AI styling, and curated collections.
+              Discover the future of fashion with NovaStyle. Virtual try-on, AI styling, and curated collections.
             </p>
           </div>
           <div>
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-border/40 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Aetheria. All rights reserved.
+            &copy; {new Date().getFullYear()} NovaStyle. All rights reserved.
           </p>
         </div>
       </div>

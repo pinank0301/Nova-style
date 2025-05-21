@@ -83,7 +83,7 @@ export function VirtualTryOnSection() {
     }
   };
 
-  const sampleClothingImageUrl = "https://placehold.co/300x400.png?text=Outfit";
+  const sampleClothingImageUrl = "https://placehold.co/300x400.png";
 
   return (
     <SectionWrapper id="try-on" className="bg-card">
@@ -142,7 +142,7 @@ export function VirtualTryOnSection() {
                 <Image src={triedOnImage} alt="User with tried on clothing" layout="fill" objectFit="contain" className="rounded-md" />
                 {/* Mock overlay of clothing */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                   <Image src={sampleClothingImageUrl} alt="Clothing item overlay" width={150} height={200} className="opacity-70 drop-shadow-lg" data-ai-hint="fashion model"/>
+                   <Image src={sampleClothingImageUrl} alt="Clothing item overlay" width={150} height={200} className="opacity-70 drop-shadow-lg" data-ai-hint="clothing item"/>
                 </div>
               </div>
             ) : (
@@ -157,4 +157,3 @@ export function VirtualTryOnSection() {
     </SectionWrapper>
   );
 }
-

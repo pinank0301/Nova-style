@@ -5,10 +5,10 @@ import { SectionWrapper } from '@/components/shared/section-wrapper';
 import { Sparkles } from 'lucide-react';
 
 const sampleItems: ClothingItem[] = [
-  { id: '1', name: 'Flowy Maxi Dress', description: 'Elegant dress for special occasions.', price: '$120', imageUrl: 'https://placehold.co/400x533.png', category: 'Dresses', dataAiHint: 'maxi dress' },
-  { id: '2', name: 'Urban Denim Jacket', description: 'Versatile jacket for a casual look.', price: '$85', imageUrl: 'https://placehold.co/400x533.png', category: 'Jackets', dataAiHint: 'denim jacket' },
-  { id: '3', name: 'Silk Blend Blouse', description: 'Luxurious blouse for work or evening.', price: '$70', imageUrl: 'https://placehold.co/400x533.png', category: 'Tops', dataAiHint: 'silk blouse' },
-  { id: '4', name: 'Tailored Chinos', description: 'Comfortable and stylish chinos.', price: '$60', imageUrl: 'https://placehold.co/400x533.png', category: 'Pants', dataAiHint: 'chinos men' },
+  { id: '1', name: 'Flowy Maxi Dress', description: 'Elegant dress for special occasions.', price: '$120', imageUrl: 'https://placehold.co/400x533.png', category: 'Dresses', dataAiHint: 'floral dress' },
+  { id: '2', name: 'Urban Denim Jacket', description: 'Versatile jacket for a casual look.', price: '$85', imageUrl: 'https://placehold.co/400x533.png', category: 'Jackets', dataAiHint: 'blue jacket' },
+  { id: '3', name: 'Silk Blend Blouse', description: 'Luxurious blouse for work or evening.', price: '$70', imageUrl: 'https://placehold.co/400x533.png', category: 'Tops', dataAiHint: 'white blouse' },
+  { id: '4', name: 'Tailored Chinos', description: 'Comfortable and stylish chinos.', price: '$60', imageUrl: 'https://placehold.co/400x533.png', category: 'Pants', dataAiHint: 'khaki pants' },
 ];
 
 export function ClothingShowcase() {
@@ -29,4 +29,3 @@ export function ClothingShowcase() {
     </SectionWrapper>
   );
 }
-

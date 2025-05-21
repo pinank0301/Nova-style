@@ -27,7 +27,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <ShoppingBag className="h-7 w-7 text-primary" />
-          <span className="text-2xl font-bold text-foreground">Aetheria</span>
+          <span className="text-2xl font-bold text-foreground">NovaStyle</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">

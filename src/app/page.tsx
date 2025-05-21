@@ -36,7 +36,7 @@ export default function HomePage() {
       
       <SectionWrapper className="bg-gradient-to-b from-background to-muted/20">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">Why Shop With Aetheria?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">Why Shop With NovaStyle?</h2>
           <p className="mt-4 text-lg text-muted-foreground">Experience a new era of online fashion shopping.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to Find Your Perfect Style?</h2>
           <p className="max-w-xl mx-auto text-lg text-primary-foreground/90 mb-8">
-            Join Aetheria today and transform your wardrobe with pieces that speak to you.
+            Join NovaStyle today and transform your wardrobe with pieces that speak to you.
           </p>
           <Button asChild size="lg" variant="outline" className="bg-background text-primary hover:bg-background/90 border-transparent shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <Link href="/#shop">

@@ -11,7 +11,7 @@ const geist = Geist({ // Using Geist variable font
 });
 
 export const metadata: Metadata = {
-  title: 'Aetheria - Redefine Your Style',
+  title: 'NovaStyle - Redefine Your Style',
   description: 'Experience the future of fashion with virtual try-on and AI-powered style recommendations.',
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">{/* Apply dark class to html for consistent dark theme */}
+    <html lang="en" className="dark"> {/* Apply dark class to html for consistent dark theme */}
       <body className={`${geist.variable} font-sans antialiased bg-background text-foreground`}>
         <Header />
         <main className="flex-grow">
