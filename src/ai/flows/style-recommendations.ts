@@ -26,7 +26,7 @@ export type StyleRecommendationsInput = z.infer<typeof StyleRecommendationsInput
 const RecommendedItemSchema = z.object({
   name: z.string().describe('The name of the recommended clothing item.'),
   description: z.string().describe('A brief description of the recommended clothing item.'),
-  imageUrl: z.string().describe("A placeholder image URL for the item, e.g., 'https://placehold.co/300x400.png'. Must be a valid URL string."),
+  imageUrl: z.string().describe("A placeholder image URL of the item, e.g., 'https://placehold.co/300x400.png'. Must be a valid URL string."),
   dataAiHint: z.string().optional().describe('One or two keywords for the placeholder image (e.g., "silver necklace", "leather boots"). Max two words.'),
 });
 
